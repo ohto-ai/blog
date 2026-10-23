@@ -128,6 +128,7 @@ nav:
   - 主站: http://ohtoai.top/
   - 首页: index.md
   - C++:
+    - cpp/cpp-resources.md
     - cpp/design-patterns.md
     - cpp/other-cpp-tips.md
     - cpp/rand-method.md
@@ -143,6 +144,10 @@ nav:
       - cpp/dump-traceback.md
     - UE4:
       - ue4/ue-ufunction-macro.md
+  - Linux:
+    - linux/index.md
+    - linux/linux-commands.md
+    - linux/text-processing.md
   - Tool:
     - Regex: tool/regex/learn-regex.md
     - Vim: tool/vim/
