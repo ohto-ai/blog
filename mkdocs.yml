@@ -129,6 +129,12 @@ nav:
   - 首页: index.md
   - C++:
     - cpp/cpp-resources.md
+    - 现代 C++:
+      - cpp/smart-pointers.md
+      - cpp/move-semantics.md
+      - cpp/modern-cpp-features.md
+    - 并发:
+      - cpp/concurrency.md
     - cpp/design-patterns.md
     - cpp/other-cpp-tips.md
     - cpp/rand-method.md
