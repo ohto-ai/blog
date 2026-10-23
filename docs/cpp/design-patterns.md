@@ -4,7 +4,7 @@ tags: 设计模式
 ---
 # <span id = "设计模式">设计模式</span>
 
-![](../img/design-patterns-for-humans.png)
+![](img/design-patterns-for-humans.png)
 
 * * *
 设计模式超简单的解释(本项目是 [`design-patterns-for-humans`](https://github.com/kamranahmedse/design-patterns-for-humans) 的中文翻译版)。配合 [`design-patterns-php`](https://github.com/guanguans/design-patterns-php)、[`设计模式 45 种`](https://github.com/guanguans/notes/blob/master/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%8845%E7%A7%8D%EF%BC%89.md) 阅读体验更佳。
@@ -70,9 +70,9 @@ tags: 设计模式
 
 ### <span id = "设计模式的类型">设计模式的类型</span>
 
-* [创建型](#creational-design-patterns)
-* [结构型](#structural-design-patterns)
-* [行为型](#behavioral-design-patterns)
+* [创建型](#创建型设计模式)
+* [结构型](#结构型设计模式)
+* [行为型](#行为型设计模式)
 
 ## <span id = "创建型设计模式">创建型设计模式</span>
 
@@ -84,12 +84,12 @@ tags: 设计模式
 
 > 在软件工程中，创建设计模式是处理对象创建机制的设计模式，试图以适合于该情况的方式创建对象。对象创建的基本形式可能导致设计问题或增加设计的复杂性。创建设计模式通过某种方式控制此对象创建来解决此问题。
 
-* [简单工厂模式（Simple Factory）](#-simple-factory)
-* [工厂方法模式（Factory Method）](#-factory-method)
-* [抽象工厂模式（Abstract Factory）](#-abstract-factory)
-* [构建器模式](#-builder)
-* [原型模式（Prototype）](#-prototype)
-* [单例模式（Singleton）](#-singleton)
+* [简单工厂模式（Simple Factory）](#简单工厂模式simple-factory)
+* [工厂方法模式（Factory Method）](#工厂方法模式factory-method)
+* [抽象工厂模式（Abstract Factory）](#抽象工厂模式abstract-factory)
+* [构建器模式](#建造者模式)
+* [原型模式（Prototype）](#原型模式prototype)
+* [单例模式（Singleton）](#单例模式singleton)
 
 ### <span id = "简单工厂模式simple-factory">🏠简单工厂模式（Simple Factory）</span>
 
@@ -647,13 +647,13 @@ var_dump($president1 === $president2); // true
 
 > 在软件工程中，结构设计模式是通过识别实现实体之间关系的简单方法来简化设计的设计模式。
 
-* [适配器模式（Adapter）](#-adapter)
-* [桥梁模式（Bridge）](#-bridge)
-* [组合模式（Composite）](#-composite)
-* [装饰模式（Decorator）](#-decorator)
-* [门面模式（Facade）](#-facade)
-* [享元模式（Flyweight）](#-flyweight)
-* [代理模式（Proxy）](#-proxy)
+* [适配器模式（Adapter）](#适配器模式adapter)
+* [桥梁模式（Bridge）](#桥梁模式bridge)
+* [组合模式（Composite）](#组合模式composite)
+* [装饰模式（Decorator）](#装饰模式decorator)
+* [门面模式（Facade）](#门面模式facade)
+* [享元模式（Flyweight）](#享元模式flyweight)
+* [代理模式（Proxy）](#代理模式proxy)
 
 ### <span id = "适配器模式adapter">🔌适配器模式（Adapter）</span>
 
@@ -1377,16 +1377,16 @@ $door->close(); // Closing lab door
 
 > 在软件工程中，行为设计模式是识别对象之间的共同通信模式并实现这些模式的设计模式。通过这样做，这些模式增加了执行该通信的灵活性。
 
-* [责任链模式（Chain Of Responsibilities）](#-chain-of-responsibility)
-* [命令行模式（Command）](#-command)
-* [迭代器模式（Iterator）](#-iterator)
-* [中介者模式（Mediator）](#-mediator)
-* [备忘录模式（Memento）](#-memento)
-* [观察者模式（Observer）](#-observer)
-* [访问者模式（Visitor）](#-visitor)
-* [策略模式（Strategy）](#-strategy)
-* [状态模式（State）](#-state)
-* [模板方法模式（Template Method）](#-template-method)
+* [责任链模式（Chain Of Responsibilities）](#责任链模式chain-of-responsibilities)
+* [命令行模式（Command）](#命令行模式command)
+* [迭代器模式（Iterator）](#迭代器模式iterator)
+* [中介者模式（Mediator）](#中介者模式mediator)
+* [备忘录模式（Memento）](#备忘录模式memento)
+* [观察者模式（Observer）](#观察者模式observer)
+* [访问者模式（Visitor）](#访问者模式visitor)
+* [策略模式（Strategy）](#策略模式strategy)
+* [状态模式（State）](#状态模式state)
+* [模板方法模式（Template Method）](#模板方法模式template-method)
 
 ### <span id = "责任链模式chain-of-responsibilities">🔗责任链模式（Chain Of Responsibilities）</span>
 

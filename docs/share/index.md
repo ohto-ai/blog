@@ -18,8 +18,7 @@ tags: 网站, 工具, 分享
 | [veeso/termscp](https://github.com/veeso/termscp) | 终端文件传输工具 |
 | [YunYouJun/cook](https://cook.yunyoujun.cn/) | 好的，今天我们来做菜！ |
 | [broot](https://github.com/Canop/broot) | 命令行文件管理器 |
-| [aitag](https://aitag.top/) | AI Tag |
-| [note](https://note.ms/) | 在线笔记 |
+| [note](https://note.ms/) | 在线笔记（大陆需梯子） |
 | [Incredi Build](https://docs.incredibuild.cn/index.html) | 联合编译 |
 | [carbon](https://carbon.now.sh/) | 代码渲染 |
 | [readme.so](https://readme.so/) | 编写readme |
@@ -31,7 +30,7 @@ tags: 网站, 工具, 分享
 | 链接 | 简介 |
 |-----|------|
 | [ssh-welcome-funny-command](https://dmesg.app/ssh-welcome-funny-command.html) | 草泥马 SSH 登录信息、几个好玩的 Linux 命令 |
-| [每天 60 秒读懂世界 API](https://viki.moe/60s/) | 每天 60 秒读懂世界 API |
+| [每天 60 秒读懂世界 API](https://60s.viki.moe/) | 每天 60 秒读懂世界 API（[开源](https://github.com/vikiboss/60s)） |
 | [tailscale](https://tailscale.com/) | 搭建私有局域网 |
 
 ## 在哪里

@@ -4,7 +4,7 @@ comments: true
 # 格雷码的实现
 <style>
 /* https://github.com/lonekorean/gist-syntax-themes */
-@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/tomorrow-night.css');
+@import url('https://cdn.jsdelivr.net/gh/lonekorean/gist-syntax-themes@b737b139/stylesheets/tomorrow-night.css');
 </style>
 
 > 内容需要从gist中加载，请耐心等待  

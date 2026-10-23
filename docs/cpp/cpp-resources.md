@@ -37,7 +37,7 @@ comments: true
 
 - **[C++ Patterns](https://cpppatterns.com/)** — 现代 C++ 惯用法小例子集合。
 - **[More C++ Idioms](https://en.wikibooks.org/wiki/More_C%2B%2B_Idioms)** — Wikibooks 上的惯用法大全（EBO、CRTP、Pimpl 等都有覆盖）。
-- **[C++ Best Practices](https://github.com/cpp-best-practices/cppbestpractices)** — Jason Turner 维护的工程实践清单，配套 [CppBestPractices 会议](https://github.com/cpp-best-practices/toolchain)工具链脚本。
+- **[C++ Best Practices](https://github.com/cpp-best-practices/cppbestpractices)** — Jason Turner 维护的工程实践清单，配套 [CMake 模板](https://github.com/cpp-best-practices/cmake_template)（内置 sanitizer、fuzzing 与 CI 配置）。
 
 ## 在线工具
 

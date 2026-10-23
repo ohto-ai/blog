@@ -19,14 +19,14 @@ comments: true
 
 ## 命令速查
 
-- **[tldr pages](https://tldr.sh/)** — 社区维护的简化 man 页，用例子说话，装个 [客户端](https://github.com/tldr-pages/tldr/tree/main/clients)（如 `tldr`、`tealdeer`）配合 `--update` 使用体验极佳。
+- **[tldr pages](https://tldr.sh/)** — 社区维护的简化 man 页，用例子说话，装个客户端（如 [tealdeer](https://github.com/tealdeer-rs/tealdeer)）配合 `--update` 使用体验极佳。
 - **[cheat.sh](https://cheat.sh/)** — `curl cheat.sh/tar` 一行命令直接查速查表，无需安装。
 - **[explainshell.com](https://explainshell.com/)** — 粘贴一条完整命令，逐段解释每个参数的含义，看懂网上复制的长命令神器。
 
 ## 系统性教程
 
 - **[The Linux Command Line](https://linuxcommand.org/tlcl.php)** — William Shotts 的免费电子书（英文），从 shell 基础到 shell 脚本编写，最推荐的系统入门材料。
-- **[Linux Journey](https://linuxjourney.com/)** — 交互式课程，从概念到命令分级闯关，适合零基础。
+- **[Linux Journey (LabEx)](https://labex.io/linuxjourney)** — 交互式课程，从概念到命令分级闯关，适合零基础（原 linuxjourney.com，已并入 LabEx）。
 - **[MIT The Missing Semester](https://missing.csail.mit.edu/)** — MIT 的「课堂上缺失的一学期」，讲 shell、vim、git、调试、性能工具等开发者必备技能，[中文翻译版](https://missing-semester-cn.github.io/)可用。
 - **[鸟哥的 Linux 私房菜](https://linux.vbird.org/)** — 中文世界的经典教程，基础篇 + 服务器架设篇，适合打好概念地基。
 

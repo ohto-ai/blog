@@ -9,7 +9,7 @@ comments: true
 # COS Album
 <!-- <style>
 /* https://github.com/lonekorean/gist-syntax-themes */
-@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/b737b139/stylesheets/tomorrow-night.css');
+@import url('https://cdn.jsdelivr.net/gh/lonekorean/gist-syntax-themes@b737b139/stylesheets/tomorrow-night.css');
 </style> -->
   <div class="album-content">
   </div>
