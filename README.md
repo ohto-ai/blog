@@ -10,7 +10,7 @@
 
 ## 内容
 
-`docs/` 下包含 C++（资源整理、智能指针、移动语义、现代特性速查、并发编程）、Linux（命令速查、grep/sed/awk、资源整理）、UE4、Minecraft（GuildPlugin、OpShop、KD 计分板等）、工具、相册、Git 使用、运行状态等笔记与文章。
+`docs/` 下包含 C++（资源整理、语言核心、STL、并发、工程实践、调试、算法）、Linux（命令行、文本处理、Shell 脚本、系统编程）、UE4、Minecraft（GuildPlugin、OpShop、KD 计分板等）、工具、分享、相册、Git 使用、运行状态等笔记与文章。
 
 ## 本地开发
 

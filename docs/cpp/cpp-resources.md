@@ -73,6 +73,14 @@ comments: true
 - [std::proposals](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/) — WG21 论文索引，想跟踪 C++26/29 提案原文从这里找。
 - 中文社区：知乎 C++ 话题、GitHub 上的 [CppGuide](https://github.com/balloonwj/CppGuide)（C++ 服务端开发知识整理）等。
 
+## 站内相关笔记
+
+- **语言核心**：[现代 C++ 特性速查](modern-cpp-features.md) · [移动语义与完美转发](move-semantics.md) · [智能指针使用指南](smart-pointers.md) · [零碎知识小记](other-cpp-tips.md)
+- **STL**：[容器与算法速查](stl-containers-algorithms.md)
+- **并发**：[并发编程笔记](concurrency.md) · [OpenMP 并行计算](open-mp.md)
+- **工程实践**：[编译与链接](compile-link.md) · [设计模式](design-patterns.md) · [错误码封装](error-code.md) · [Daemon 编写](daemon.md)
+- **调试**：[打印调用堆栈](dump-traceback.md)
+
 ## 建议的学习路径
 
 1. **Learn C++** 过一遍基础（跳过 C 风格章节可以快些）；

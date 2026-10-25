@@ -131,32 +131,40 @@ nav:
   - 首页: index.md
   - C++:
     - cpp/cpp-resources.md
-    - 现代 C++:
-      - cpp/smart-pointers.md
-      - cpp/move-semantics.md
+    - 语言核心:
       - cpp/modern-cpp-features.md
+      - cpp/move-semantics.md
+      - cpp/smart-pointers.md
+      - cpp/other-cpp-tips.md
+    - STL:
+      - cpp/stl-containers-algorithms.md
     - 并发:
       - cpp/concurrency.md
-    - cpp/design-patterns.md
-    - cpp/other-cpp-tips.md
-    - cpp/rand-method.md
-    - cpp/open-mp.md
-    - cpp/branfuck.md
-    - cpp/gray-code.md
-    - cpp/error-code.md
-    - cpp/daemon.md
-    - Algorithm:
+      - cpp/open-mp.md
+    - 工程实践:
+      - cpp/compile-link.md
+      - cpp/design-patterns.md
+      - cpp/error-code.md
+      - cpp/daemon.md
+    - 调试:
+      - cpp/dump-traceback.md
+    - 算法与编码:
       - cpp/mt19937.md
       - cpp/fowler-noll-vo-1a.md
-    - Debug:
-      - cpp/dump-traceback.md
+      - cpp/rand-method.md
+      - cpp/gray-code.md
+      - cpp/branfuck.md
     - UE4:
       - ue4/ue-ufunction-macro.md
   - Linux:
     - linux/index.md
-    - linux/linux-commands.md
-    - linux/text-processing.md
-  - Tool:
+    - 命令行:
+      - linux/linux-commands.md
+      - linux/text-processing.md
+      - linux/shell-scripting.md
+    - 系统编程:
+      - linux/system-programming.md
+  - 工具:
     - Regex: tool/regex/learn-regex.md
     - Git: tool/git/git-guide.md
     - Win10: tool/win10upgrad.md
@@ -169,6 +177,7 @@ nav:
     - share/algorithm-visualizer.md
     - share/stashapp.md
     - share/pose-monitor.md
+  - 相册: album/index.md
   - MC:
     - GuildPlugin:
       - mc/guildplugin/index.md

@@ -7,6 +7,8 @@ comments: true
 
 - [常用命令速查](linux-commands.md)：按场景分类的日常命令清单
 - [文本三剑客 grep / sed / awk](text-processing.md)：文本处理实战
+- [Shell 脚本笔记](shell-scripting.md)：语法、陷阱与实战脚本
+- [系统编程基础](system-programming.md)：进程、信号与 IPC
 
 以及一份按用途整理的**学习资源清单**（见下文）。
 
