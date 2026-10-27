@@ -133,6 +133,7 @@ nav:
     - cpp/cpp-resources.md
     - 语言核心:
       - cpp/modern-cpp-features.md
+      - cpp/templates.md
       - cpp/move-semantics.md
       - cpp/smart-pointers.md
       - cpp/other-cpp-tips.md
@@ -162,10 +163,14 @@ nav:
       - linux/linux-commands.md
       - linux/text-processing.md
       - linux/shell-scripting.md
+    - 排查:
+      - linux/diagnostics.md
     - 系统编程:
       - linux/system-programming.md
+      - linux/network-programming.md
   - 工具:
     - Regex: tool/regex/learn-regex.md
+    - Vim: tool/vim/index.md
     - Git: tool/git/git-guide.md
     - Win10: tool/win10upgrad.md
     - Github活动: 

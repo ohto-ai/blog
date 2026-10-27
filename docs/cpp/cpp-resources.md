@@ -75,7 +75,7 @@ comments: true
 
 ## 站内相关笔记
 
-- **语言核心**：[现代 C++ 特性速查](modern-cpp-features.md) · [移动语义与完美转发](move-semantics.md) · [智能指针使用指南](smart-pointers.md) · [零碎知识小记](other-cpp-tips.md)
+- **语言核心**：[现代 C++ 特性速查](modern-cpp-features.md) · [模板与泛型编程](templates.md) · [移动语义与完美转发](move-semantics.md) · [智能指针使用指南](smart-pointers.md) · [零碎知识小记](other-cpp-tips.md)
 - **STL**：[容器与算法速查](stl-containers-algorithms.md)
 - **并发**：[并发编程笔记](concurrency.md) · [OpenMP 并行计算](open-mp.md)
 - **工程实践**：[编译与链接](compile-link.md) · [设计模式](design-patterns.md) · [错误码封装](error-code.md) · [Daemon 编写](daemon.md)

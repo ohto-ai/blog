@@ -138,7 +138,7 @@ extern char** environ;                    // 遍历所有环境变量
 
 ## 再往下的路标
 
-- **I/O 多路复用**：`select` / `poll` / `epoll`——单线程监视成百上千个 fd，网络服务的基石（`man 7 epoll`）；
+- **I/O 多路复用与 socket**：[网络编程基础](network-programming.md)——socket API、select/poll/epoll 与回显服务器示例；
 - **线程**：`pthread_create`，C++ 侧直接用 `std::thread`/`std::jthread`（见[并发笔记](../cpp/concurrency.md)）；
 - **后台服务化**：见 [Daemon 编写](../cpp/daemon.md)（fork + setsid + systemd）；
 - **系统级书籍**：《The Linux Programming Interface》，链接见 [Linux 资源整理](index.md)。
