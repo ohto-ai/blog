@@ -11,6 +11,7 @@ comments: true
 - [性能排查工具箱](diagnostics.md)：CPU/内存/磁盘/网络故障定位
 - [网络编程基础](network-programming.md)：socket、epoll 与回显服务器
 - [系统编程基础](system-programming.md)：进程、信号与 IPC
+- [容器基础（Docker）](docker-basics.md)：镜像、容器、Dockerfile 与 Compose
 
 以及一份按用途整理的**学习资源清单**（见下文）。
 

@@ -101,11 +101,15 @@ extra_css:
 extra_javascript:
   - extra/js/increase_counter.js
   - extra/js/github-io-view-ctrl.js
+  - extra/js/copyright-year.js
   # - https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js
   # - extra/js/extra.js
 
+# 不要在这里用 <script>document.write(...)：instant navigation 切页时会重新执行
+# 内联脚本，document.write 在页面加载后调用会清空整个文档（表现为点击标题只剩年份）。
+# 年份自动更新见 extra/js/copyright-year.js，静态 2026 是 JS 失效时的兜底。
 copyright: >
-  Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://ohtoai.top/">Ohto-Ai</a> –
+  Copyright &copy; 2022–<span id="ohtoai-copyright-year">2026</span> <a href="https://ohtoai.top/">Ohto-Ai</a> –
   <a href="#__consent">Change cookie settings</a>
 
 markdown_extensions:
@@ -157,6 +161,12 @@ nav:
       - cpp/branfuck.md
     - UE4:
       - ue4/ue-ufunction-macro.md
+  - CUDA:
+    - cuda/cuda-basics.md
+    - cuda/cuda-optimization.md
+  - Python:
+    - python/python-env.md
+    - python/python-idioms.md
   - Linux:
     - linux/index.md
     - 命令行:
@@ -168,6 +178,8 @@ nav:
     - 系统编程:
       - linux/system-programming.md
       - linux/network-programming.md
+    - 容器:
+      - linux/docker-basics.md
   - 工具:
     - Regex: tool/regex/learn-regex.md
     - Vim: tool/vim/index.md
@@ -193,7 +205,12 @@ nav:
     - KD计分板:
       - mc/kd-scoreboard/index.md
   - Mercy: mercy.md
-  - Monitor: uptime-status/
-  - 友链: friend.md
   - 关于: about.md
 #   - 开往: https://travellings.link
+
+# 存在但不出现在导航的页面（消除 "not included in nav" 提示）
+not_in_nav: |
+  friend.md
+  uptime-status/index.md
+  others/zxll.md
+  album/cos-album/README.md
