@@ -10,7 +10,7 @@
 
 ## 内容
 
-`docs/` 下包含 C++（资源整理、语言核心、模板、STL、并发、工程实践、调试、算法）、CUDA（入门、性能优化）、Python（环境与包管理、惯用法）、Linux（命令行、排查工具箱、系统编程、网络编程、容器）、UE4、Minecraft（GuildPlugin、OpShop、KD 计分板等）、工具（Regex、Vim、Git）、分享、相册等笔记与文章。
+`docs/` 下包含 C++（资源整理、语言核心、模板、STL、并发、工程实践、调试、算法）、CUDA（入门、性能优化）、Python（环境与包管理、惯用法）、Linux（命令行、排查工具箱、系统编程、网络编程、容器）、UE4、Minecraft（GuildPlugin、OpShop、KD 计分板等）、工具（Regex、Vim、Git）、分享等笔记与文章。
 
 ## 本地开发
 
