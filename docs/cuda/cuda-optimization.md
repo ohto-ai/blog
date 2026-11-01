@@ -91,7 +91,7 @@ __global__ void sumReduce(const float* in, float* out, int n) {
 }
 ```
 
-生产代码用 CUB（`cub::DeviceReduce`）或 `thrust::reduce`，手写版本用来理解原理（warp shuffle `__shfl_down_sync` 能再快一截，见 Programming Guide）。
+生产代码用 CUB（`cub::DeviceReduce`）或 `thrust::reduce`，手写版本用来理解原理（warp shuffle `__shfl_down_sync` 能再快一截，见[Warp 级编程](warp-primitives.md)）。
 
 ## block 大小与 occupancy
 

@@ -164,9 +164,15 @@ nav:
   - CUDA:
     - cuda/cuda-basics.md
     - cuda/cuda-optimization.md
+    - cuda/warp-primitives.md
+    - cuda/pytorch-cuda.md
   - Python:
     - python/python-env.md
     - python/python-idioms.md
+    - python/testing-debugging.md
+    - 并发与异步:
+      - python/concurrency.md
+      - python/asyncio.md
   - Linux:
     - linux/index.md
     - 命令行:
