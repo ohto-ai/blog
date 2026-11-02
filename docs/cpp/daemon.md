@@ -137,6 +137,8 @@ int main()
 
 ## 关于 systemd
 
+> unit 文件的完整写法、安全加固、timer 与调试见[systemd 服务实战](../linux/systemd.md)。
+
 ### 标准输入输出
 
 在daemon中通常需要关闭标准输入(stdin)、标准输出(stdout)和标准错误(stderr)，因为它们会与终端关联，并且可能会影响后台运行。如果需要输出日志，可以使用系统日志（syslog）或者自定义日志等方式。

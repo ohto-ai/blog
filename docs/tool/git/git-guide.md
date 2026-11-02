@@ -27,6 +27,7 @@ hide:
     <div class="read_pro_inner" id="read_pro_inner"></div>
 </div>
 [阅读原文](../git_guide/)  
+> 进阶操作（rebase / reflog / bisect / worktree）见[Git 进阶](../git-advanced.md)。
 <iframe id='inner-html' style='width:100%' src="../git_guide/" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 <script>
     // expand content

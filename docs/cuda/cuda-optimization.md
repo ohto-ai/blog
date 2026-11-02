@@ -137,4 +137,4 @@ cudaStreamSynchronize(s1);
 
 ## 基线参考
 
-像 `vecAdd` 这种 1M 元素级的小任务，瓶颈永远在 PCIe 拷贝而非计算——这就是"数据量不够大就别上 GPU"的直观体现。改进顺序永远是：**先合并访存 → 再上 shared memory → 最后才考虑流与调度微调**。改前改后都用 `ncu` 量一下（本文开头的工具），不要凭感觉优化。
+像 `vecAdd` 这种 1M 元素级的小任务，瓶颈永远在 PCIe 拷贝而非计算——这就是"数据量不够大就别上 GPU"的直观体现。改进顺序永远是：**先合并访存 → 再上 shared memory → 最后才考虑流与调度微调**。改前改后都用 `ncu` 量一下（本文开头的工具），不要凭感觉优化。scan/histogram/transpose 等常用套路见[经典并行模式](parallel-patterns.md)。

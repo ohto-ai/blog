@@ -165,10 +165,13 @@ nav:
     - cuda/cuda-basics.md
     - cuda/cuda-optimization.md
     - cuda/warp-primitives.md
+    - cuda/parallel-patterns.md
     - cuda/pytorch-cuda.md
   - Python:
     - python/python-env.md
     - python/python-idioms.md
+    - python/decorators.md
+    - python/numpy-pandas.md
     - python/testing-debugging.md
     - 并发与异步:
       - python/concurrency.md
@@ -184,12 +187,15 @@ nav:
     - 系统编程:
       - linux/system-programming.md
       - linux/network-programming.md
+    - 服务化:
+      - linux/systemd.md
     - 容器:
       - linux/docker-basics.md
   - 工具:
     - Regex: tool/regex/learn-regex.md
     - Vim: tool/vim/index.md
     - Git: tool/git/git-guide.md
+    - Git 进阶: tool/git-advanced.md
     - Win10: tool/win10upgrad.md
     - Github活动: 
       - gitstalk/index.md
