@@ -53,7 +53,7 @@ std::mutex m;
     cv.wait(lk, pred);              // 内部会解锁-等待-重锁
 }
 
-{   // C++20：捷足先登一个头文件搞定
+{   // C++20：一个头文件搞定
     std::scoped_lock lk(m);         // 单锁
 }
 {   // 一次锁多个且不会死锁（内部用死锁避免算法）
@@ -124,7 +124,7 @@ while (!done.load(std::memory_order_acquire)) {}
 | `seq_cst`（默认） | 全局全序，最直观最慢 | 不确定就用默认 |
 
 !!! tip "先锁后锁自由"
-    默认 `seq_cst` 写代码，**测出锁是瓶颈**再考虑更弱的 order 和无锁结构。手写无锁链表/队列是高手坟墓，优先用 `std::shared_ptr` 的原子接口或成熟库（folly/boost::lockfree）。
+    默认 `seq_cst` 写代码，**测出锁是瓶颈**再考虑更弱的 order 和无锁结构。手写无锁链表/队列极易出错，优先用 `std::shared_ptr` 的原子接口或成熟库（folly/boost::lockfree）。
 
     顺带：C++11 起函数内 `static` 局部变量初始化是线程安全的（magic statics），单例直接写 `static X& inst() { static X x; return x; }`。
 

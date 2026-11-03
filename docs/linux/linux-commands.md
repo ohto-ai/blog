@@ -112,7 +112,7 @@ rsync -avzP src/ user@host:dst/     # 增量同步，大文件传输首选
 | `lsblk` | 块设备树（看磁盘/分区一目了然） |
 | `mount / umount` | 挂载 / 卸载；`mount -a` 按 fstab 重挂 |
 | `blkid` | 查看 UUID（写 fstab 用） |
-| `ncdu /path` | 交互式磁盘占用分析（需安装，查「磁盘去哪了」神器） |
+| `ncdu /path` | 交互式磁盘占用分析（需安装，查「磁盘去哪了」利器） |
 
 ## 用户与权限
 

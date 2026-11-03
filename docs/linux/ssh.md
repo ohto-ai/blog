@@ -9,7 +9,7 @@ comments: true
 
 ```bash
 ssh-keygen -t ed25519 -C "ohtoai@laptop"    # 现代首选；-C 只是备注
-# 生成 ~/.ssh/id_ed25519（私钥，打死不给）与 id_ed25519.pub（公钥，随便放）
+# 生成 ~/.ssh/id_ed25519（私钥，绝不外泄）与 id_ed25519.pub（公钥，可自由分发）
 
 ssh-copy-id user@server                     # 一条命令把公钥装到服务器
 # 等价于手动：cat ~/.ssh/id_ed25519.pub | ssh user@server \
@@ -52,7 +52,7 @@ Host *
 
 ```bash
 ssh dev                           # 等价于 ssh -p 2222 ohtoai@203.0.113.10 -i ...
-ssh -G dev                        # 打印该别名最终解析出的全部配置——调试 config 神器
+ssh -G dev                        # 打印该别名最终解析出的全部配置——调试 config 的利器
 ```
 
 `scp`/`rsync` 同样吃这套别名：`rsync -avz src/ dev:/opt/`（见[常用命令](linux-commands.md)）。

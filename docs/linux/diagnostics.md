@@ -61,7 +61,7 @@ journalctl -k | grep -i oom
 ```
 
 !!! note "OOM killer 逻辑"
-    内存耗尽时内核按 oom_score 挑分最高的杀。给关键进程降分（保命）：`echo -1000 > /proc/<pid>/oom_score_adj` 或 systemd unit 里 `OOMScoreAdjust=-1000`。
+    内存耗尽时内核按 oom_score 选择并终止分数最高的进程。给关键进程降分（避免被选中）：`echo -1000 > /proc/<pid>/oom_score_adj` 或 systemd unit 里 `OOMScoreAdjust=-1000`。
 
 ## 磁盘：满了看谁占，慢了看 I/O
 

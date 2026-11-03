@@ -87,7 +87,7 @@ df.sort_values("score", ascending=False)
 df.assign(bonus=df["score"] * 0.1)                   # 生成新列（不改原表）
 ```
 
-### 分组聚合（groupby 是灵魂）
+### 分组聚合（groupby 是核心操作）
 
 ```python
 df.groupby("dept")["score"].mean()                    # 每部门平均分
@@ -126,4 +126,4 @@ df.drop_duplicates()              # 去重
 ## 与本站其他文章的关系
 
 - ndarray ↔ PyTorch 张量：`torch.from_numpy(arr)` 零拷贝互转，操作语义几乎一致，上 GPU 才是分水岭（见[PyTorch 实践](../cuda/pytorch-cuda.md)）；
-- 本篇示例在 numpy 2.3 / pandas 2.3 上全量跑通；写完的处理脚本配[测试与调试](testing-debugging.md)的 pytest 钉住边界数据。
+- 本篇示例在 numpy 2.3 / pandas 2.3 上全量跑通；写完的处理脚本配[测试与调试](testing-debugging.md)的 pytest 覆盖边界数据。

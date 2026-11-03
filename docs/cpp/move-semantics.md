@@ -68,7 +68,7 @@ private:
 更好的策略是 **Rule of Zero**：成员全部用 `std::string` / `std::vector` / [智能指针](smart-pointers.md)，让编译器生成的五个函数全部正确，一个都不写。
 
 !!! warning "移动构造必须 noexcept"
-    `std::vector` 扩容时为了异常安全，只有当元素的移动构造是 `noexcept` 时才用移动，否则退回拷贝（`std::move_if_noexcept`）。**忘写 `noexcept` = 白写了移动构造**，容器扩容照样深拷贝。
+    `std::vector` 扩容时为了异常安全，只有当元素的移动构造是 `noexcept` 时才用移动，否则退回拷贝（`std::move_if_noexcept`）。**忘写 `noexcept`，移动构造等于没写**，容器扩容照样深拷贝。
 
 ## 完美转发
 

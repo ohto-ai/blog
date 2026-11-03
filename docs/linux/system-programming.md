@@ -86,7 +86,7 @@ sigemptyset(&sa.sa_mask);
 sigaddset(&sa.sa_mask, SIGINT);            // 处理期间屏蔽 SIGINT
 sa.sa_flags = SA_RESTART;                  // 自动重启被中断的系统调用
 sigaction(SIGTERM, &sa, NULL);
-signal(SIGPIPE, SIG_IGN);                  // 网络服务保命一行
+signal(SIGPIPE, SIG_IGN);                  // 忽略 SIGPIPE：网络服务必需
 ```
 
 !!! warning "信号处理器里不是什么都能干"

@@ -94,7 +94,7 @@ torch.cuda.current_stream().wait_stream(s)  # 主流等待 s 完成（事件同�
 
 典型用法：数据预取流与训练流重叠（小 batch 训练提速明显）；单流写法不调流也能跑，**先确认瓶颈是拷贝再上多流**（nsys 时间线看得到空隙）。
 
-## 混合精度：半个 RTX 显存跑双倍模型
+## 混合精度：省一半显存，成倍吞吐
 
 ```python
 scaler = torch.amp.GradScaler("cuda")
@@ -123,7 +123,7 @@ print(prof.key_averages().table(sort_by="cuda_time_total", row_limit=10))
 prof.export_chrome_trace("trace.json")     # chrome://tracing 打开看时间线
 ```
 
-再往深用 NVIDIA 的 nsys / ncu 包住 python 进程（用法见[CUDA 优化篇](cuda-optimization.md)），能看 kernel 级瓶颈与显存带宽。常见结论排序：数据加载是瓶颈（GPU 饿着）→ num_workers/pin_memory；小 kernel 太碎 → 合并 op / `torch.compile`；单 kernel 慢 → 混精度/手写扩展。
+再往深用 NVIDIA 的 nsys / ncu 包住 python 进程（用法见[CUDA 优化篇](cuda-optimization.md)），能看 kernel 级瓶颈与显存带宽。常见结论排序：数据加载是瓶颈（GPU 空闲等待）→ num_workers/pin_memory；小 kernel 太碎 → 合并 op / `torch.compile`；单 kernel 慢 → 混精度/手写扩展。
 
 ## 自定义 CUDA 扩展：把 C++ kernel 接进 PyTorch
 
@@ -157,7 +157,7 @@ mod = load_inline(
 | 现象 | 原因 / 处理 |
 | :--- | :--- |
 | `same device` RuntimeError | 混用 CPU/CUDA 张量，逐个查 `.to(device)` |
-| 训练慢但 GPU 利用率低 | 数据管道饿着 GPU：num_workers、pin_memory、预读 |
+| 训练慢但 GPU 利用率低 | 数据管道供不上数据：num_workers、pin_memory、预读 |
 | 每步日志导致变慢 | `.item()`/print 隐式同步，降频 |
 | OOM 在验证阶段 | 忘了 `torch.no_grad()` / `model.eval()` |
 | 显存峰值正常却 OOM | 碎片：expandable_segments 或减小 batch 换梯度累积 |

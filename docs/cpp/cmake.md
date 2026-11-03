@@ -5,7 +5,7 @@ comments: true
 
 > [编译与链接](compile-link.md)里只给了最小示例；这篇讲**多人真项目**里的 CMake：target 思维、依赖传播、找库、拉依赖、调试。本篇工程在 WSL cmake 3.27 + g++ 11 全量构建运行验证过。
 
-## 心法：一切挂在 target 上
+## 核心原则：一切挂在 target 上
 
 老式 CMake 全局函数（`include_directories`、`add_definitions`、`link_directories`）污染整个目录之后的所有 target。现代写法只用 **target 命令**——属性跟着目标走，谁链接谁受益：
 

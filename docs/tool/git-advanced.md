@@ -50,7 +50,7 @@ git pull --rebase origin main       # 拉取时把本地提交“垫到”远端
 ```
 
 !!! warning "黄金法则"
-    **已推送到公共分支的提交不要 rebase**（除非全组约定）。rebase 重写提交哈希，别人基于旧哈希的工作会撞车。自己的 feature 分支随便整。
+    **已推送到公共分支的提交不要 rebase**（除非全组约定）。rebase 重写提交哈希，会与别人基于旧哈希的工作产生冲突。自己的 feature 分支则可以放心重写。
 
 ### rebase vs merge 怎么选
 

@@ -46,7 +46,7 @@ systemctl status myapp                # 状态（含主 PID、退出码、最近
 | `ExecStartPre=/Post=` | 启动前/后辅助命令（建目录、迁移等，`-` 前缀忽略失败） |
 | `ExecReload=` | `systemctl reload` 执行的动作（通常发 SIGHUP 重载配置） |
 | `StandardOutput=` | 默认进 journal；可 `append:/var/log/x.log` |
-| `OOMScoreAdjust=-1000` | OOM 时优先保命（见[排查工具箱](diagnostics.md)） |
+| `OOMScoreAdjust=-1000` | OOM 时降低被终止概率（见[排查工具箱](diagnostics.md)） |
 | `Nice=` / `CPUWeight=` / `MemoryMax=` | 资源约束；`MemoryMax=2G` 超 OOM |
 
 ## 安全加固：让服务跑在笼子里
@@ -63,7 +63,7 @@ RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6   # 只允许这些 socket 类�
 DynamicUser=yes               # 没有账号也能跑：临时分配 UID（配 StateDirectory= 持久化数据）
 ```
 
-一条 `systemd-analyze security myapp` 能给当前配置打安全分（0~10），按提示逐项补。**新服务默认就该带这些**——暴露面小了，被打了也不至于直接 rooted。
+一条 `systemd-analyze security myapp` 能给当前配置打安全分（0~10），按提示逐项补。**新服务默认就该带这些**——暴露面小了，即使遭到攻击也更难被直接提权。
 
 ## 日志：journalctl 配合
 

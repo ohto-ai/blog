@@ -26,7 +26,7 @@ comments: true
 
 - **[tldr pages](https://tldr.sh/)** — 社区维护的简化 man 页，用例子说话，装个客户端（如 [tealdeer](https://github.com/tealdeer-rs/tealdeer)）配合 `--update` 使用体验极佳。
 - **[cheat.sh](https://cheat.sh/)** — `curl cheat.sh/tar` 一行命令直接查速查表，无需安装。
-- **[explainshell.com](https://explainshell.com/)** — 粘贴一条完整命令，逐段解释每个参数的含义，看懂网上复制的长命令神器。
+- **[explainshell.com](https://explainshell.com/)** — 粘贴一条完整命令，逐段解释每个参数的含义，是看懂网上复制的长命令的利器。
 
 ## 系统性教程
 

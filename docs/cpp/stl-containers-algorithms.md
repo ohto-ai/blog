@@ -3,7 +3,7 @@ comments: true
 ---
 # STL 容器与算法速查
 
-> 怎么选容器、哪些算法天天用、迭代器什么时候失效。配合[现代 C++ 特性速查](modern-cpp-features.md)与[移动语义](move-semantics.md)食用。
+> 怎么选容器、哪些算法天天用、迭代器什么时候失效。搭配[现代 C++ 特性速查](modern-cpp-features.md)与[移动语义](move-semantics.md)阅读。
 
 ## 容器怎么选
 

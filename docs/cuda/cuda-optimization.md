@@ -97,7 +97,7 @@ __global__ void sumReduce(const float* in, float* out, int n) {
 
 ## block 大小与 occupancy
 
-- block 大小取 **32 的倍数**，128~256 起步实测调整；太小喂不饱 SM，太大调度不灵活；
+- block 大小取 **32 的倍数**，128~256 起步实测调整；太小无法占满 SM，太大调度不灵活；
 - 每个 SM 上能驻留的 block 数受三重限制：**寄存器 / shared memory / 最大线程数**——任何一项打满就是占用率天花板；
 - kernel 里少用大数组局部变量（会溢出到慢速 local memory）：`__launch_bounds__(256)` 可提示编译器控制寄存器用量。
 

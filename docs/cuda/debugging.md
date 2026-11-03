@@ -77,7 +77,7 @@ Windows 侧对应 Nsight 系列 GUI：**Nsight Systems** 看时间线（kernel/�
 | `cudaErrorInvalidConfiguration` | block 尺寸 > 1024 / 0 维 grid | 核对 `<<<>>>` 参数与设备属性 |
 | 结果随机性地错 | 竞态：缺 `__syncthreads()` | racecheck；核对栅栏成对性（见[优化篇](cuda-optimization.md)） |
 | 读到的全是 0 或旧值 | 忘拷回/忘同步就读 | D2H 前 synchronize（或用会同步的 cudaMemcpy） |
-| 程序偶发崩溃在无关行 | 更早的 kernel 已经非法访问 | 全程 KERNEL_CHECK + sanitizer 找真凶 |
+| 程序偶发崩溃在无关行 | 更早的 kernel 已经非法访问 | 全程 KERNEL_CHECK + sanitizer 定位真正的出错点 |
 | 精度异常 | float 累加顺序改变 | 分块归约/双精度/`__fadd_rn`（见[优化篇](cuda-optimization.md)坑表） |
 | shared memory 死锁 | 栅栏在 if 分支里 | 移出分支，保证全块一致到达（[Warp 篇](warp-primitives.md)） |
 
@@ -92,4 +92,4 @@ Windows 侧对应 Nsight 系列 GUI：**Nsight Systems** 看时间线（kernel/�
   → 性能问题 ≠ bug，去 nsys/ncu（优化篇）
 ```
 
-配套阅读：[C++ 并发](../cpp/concurrency.md)的 TSan 心法同源；Linux 侧通用排查见[诊断工具箱](../linux/diagnostics.md)。
+配套阅读：[C++ 并发](../cpp/concurrency.md)的 TSan 排查思路同源；Linux 侧通用排查见[诊断工具箱](../linux/diagnostics.md)。

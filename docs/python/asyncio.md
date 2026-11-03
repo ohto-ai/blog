@@ -34,7 +34,7 @@ if __name__ == "__main__":
     asyncio.run(main())               # 唯一的入口：创建事件循环并运行 main
 ```
 
-**`async def` 定义协程函数，调用它返回协程对象但不执行**——必须 `await` 它或交给任务。忘掉 await 是第一大坑：
+**`async def` 定义协程函数，调用它返回协程对象但不执行**——必须 `await` 它或交给任务。忘掉 await 是最常见的错误：
 
 ```python
 async def main():
