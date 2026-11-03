@@ -148,8 +148,10 @@ nav:
       - cpp/open-mp.md
     - 工程实践:
       - cpp/compile-link.md
+      - cpp/cmake.md
       - cpp/design-patterns.md
       - cpp/error-code.md
+      - cpp/error-handling.md
       - cpp/daemon.md
     - 调试:
       - cpp/dump-traceback.md
@@ -166,6 +168,7 @@ nav:
     - cuda/cuda-optimization.md
     - cuda/warp-primitives.md
     - cuda/parallel-patterns.md
+    - cuda/debugging.md
     - cuda/pytorch-cuda.md
   - Python:
     - python/python-env.md
@@ -182,6 +185,7 @@ nav:
       - linux/linux-commands.md
       - linux/text-processing.md
       - linux/shell-scripting.md
+      - linux/ssh.md
     - 排查:
       - linux/diagnostics.md
     - 系统编程:

@@ -143,6 +143,8 @@ ldd app                              # 查看动态库依赖解析结果
 
 ## CMake 最小可用
 
+> target 语义、依赖传播、find_package/FetchContent、presets 等工程级写法见 [CMake 工程实战](cmake.md)。
+
 ```cmake
 cmake_minimum_required(VERSION 3.16)
 project(demo CXX)

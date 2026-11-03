@@ -7,6 +7,8 @@ comments: true
 
 ## 先量后改：Profiling 工具
 
+> 工具报错与竞争问题的定位方法（sanitizer/cuda-gdb/printf）见 [CUDA 调试实战](debugging.md)。
+
 ```bash
 nsys profile ./app            # Nsight Systems：时间线总览（kernel 耗时、拷贝、空洞）
 ncu ./app                     # Nsight Compute：单 kernel 深挖（带宽、占用率、瓶颈类型）

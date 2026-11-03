@@ -95,7 +95,7 @@ wget -c url                          # 断点续传
 dig +short example.com     # DNS 解析
 tracepath example.com      # 路由追踪（无特权版 traceroute）
 
-# SSH 相关
+# SSH 相关（密钥/配置/端口转发/加固见 [SSH 速查与进阶](ssh.md)）
 ssh user@host -p 2222
 scp file user@host:/path/
 rsync -avzP src/ user@host:dst/     # 增量同步，大文件传输首选
