@@ -92,7 +92,7 @@ auto evens = std::views::iota(1, 100)
            | std::views::filter([](int x){ return x % 2 == 0; })
            | std::views::transform([](int x){ return x * x; });
 
-// 协程 co_await / co_yield / co_return（co_yield 常用来写生成器）
+// 协程 co_await / co_yield / co_return（co_yield 常用来写生成器，实现见 [C++20 协程入门](coroutines.md)）
 // modules：import <vector>;（工具链支持仍在普及中）
 
 auto cmp = [](auto a, auto b) { return a <=> b; };  // 三路比较 <=>，配合 =default 自动生成六种比较

@@ -138,6 +138,7 @@ nav:
     - 语言核心:
       - cpp/modern-cpp-features.md
       - cpp/templates.md
+      - cpp/coroutines.md
       - cpp/move-semantics.md
       - cpp/smart-pointers.md
       - cpp/other-cpp-tips.md
@@ -173,8 +174,10 @@ nav:
   - Python:
     - python/python-env.md
     - python/python-idioms.md
+    - python/generators.md
     - python/decorators.md
     - python/numpy-pandas.md
+    - python/sqlite.md
     - python/testing-debugging.md
     - 并发与异步:
       - python/concurrency.md
@@ -193,6 +196,7 @@ nav:
       - linux/network-programming.md
     - 服务化:
       - linux/systemd.md
+      - linux/nginx.md
     - 容器:
       - linux/docker-basics.md
   - 工具:
